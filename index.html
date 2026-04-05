@@ -85,6 +85,7 @@
       @media screen and (max-width: 450px) {
         .flex-column {
           margin-top: 100px;
+          margin-left: 10px;
         }
         .button-27 {
           width: 70%;
@@ -92,46 +93,35 @@
       }
     </style>
   </head>
-  <body style="background: linear-gradient(to right, #fc5c7d, #6a82fb)">
-    <div class="row justify-content-md-center align-items-center vh-100 px-5">
+  <body
+    style="background: linear-gradient(to right, #fc5c7d, #6a82fb); margin: 0"
+  >
+    <div
+      class="d-flex flex-column justify-content-center align-items-center vh-100 px-3"
+    >
       <div
-        class="row justify-content-md-center align-items-center flex-column"
-        style="height: 100%"
+        class="card shadow-lg p-3 mb-4 rounded"
+        style="
+          width: 100%;
+          max-width: 500px;
+          background: #ffffff94;
+          backdrop-filter: blur(5px);
+        "
       >
-        <div
-          class="card shadow-lg p-3 mb-5 rounded"
-          style="
-            width: 100%;
-            max-width: 500px;
-            background: #ffffff94;
-            color: #1e1e1e;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-          "
-        >
-          <div class="card-header">Quote</div>
-          <div class="card-body">
-            <figure>
-              <blockquote class="blockquote">
-                <p id="quite">
-                  <!-- A well-known quote, contained in a blockquote element. -->
-                </p>
-              </blockquote>
-              <!-- <figcaption class="blockquote-footer">
-                Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </figcaption> -->
-            </figure>
-          </div>
+        <div class="card-header">Quote</div>
+        <div class="card-body">
+          <blockquote class="blockquote">
+            <p id="quite" class="mb-0"></p>
+          </blockquote>
         </div>
-        <!-- HTML !-->
-        <button onclick="fetchRandomQuote()" class="button-27" role="button">
-          Button
-        </button>
       </div>
+
+      <button onclick="fetchRandomQuote()" class="button-27" role="button">
+        Get Advice
+      </button>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- This script tag loads the main JavaScript file (script.js) for the Quote Fetcher application, which handles dynamic functionality such as fetching and displaying quotes. -->
     <script src="./script.js"></script>
   </body>
 </html>
