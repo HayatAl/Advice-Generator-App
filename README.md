@@ -26,4 +26,5 @@ Data is powered by the [Advice Slip JSON API](https://api.adviceslip.com/).
 3. **Display:** The DOM is updated dynamically using `innerHTML` to show the new quote without refreshing the page.
 
 ---
-Developed with passion by an aspiring Web Developer 👨‍💻
+Developed with passion by an aspiring Web Developer 
+..
